@@ -1,0 +1,12 @@
+1. Create your own knowledge base about selected web services using OWL language. The outcome should be provided as a
+ turtle file including triples: classes, properties and instances. Please remember - the ontology should allow to
+ describe web services (no partucylar items nor particular goods).
+
+2. Upload your ontology into RDF4J triple store.
+
+3. Define meaningful, distinctrive queries (at least 5) and run them against your knowledge base. You will need a
+SPARQL endpoint to do that. You can use a web service (for example RDF4J - server+workbanch) or editor (for example
+Protege or Top Braid Composer) with SPARQL feature enable. The outcome should be provided as a text file with SPQRQL
+queries.
+
+4. Access your ontology programmatically (run defined queries using RDF4J library and display recived results).

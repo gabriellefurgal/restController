@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="mb" lang="en">
+<link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Mania Budowania! Web Store DEMO</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src = "MBDemo.js"></script>
+</head>
+<body>
+<div ng-controller="LegoSetsForType" style="text-align: center;">
+    <table>
+        <tr ng-repeat="set in legoSetsForType">
+            <td> {{ set.setName }} </td>
+            <td> {{ set.price }} </td>
+            <td><img ng-src="{{ set.imagePath }}" alt=""></td>
+        </tr>
+    </table>
+</div>
+<!--<div ng-controller="LegoSetTypes">-->
+    <!--<ul>-->
+    <!--<li ng-repeat="set in legoSetsData">{{ set.setName }}</li>-->
+    <!--</ul>-->
+<!--</div>-->
+</body>
+</html>

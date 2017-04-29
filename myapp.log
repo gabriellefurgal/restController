@@ -1,0 +1,55 @@
+04/23/2017 08:40:54 PM|INFO |Application                   | Starting Application on Gabi-Komputer with PID 5240 (C:\Users\Gabi\IdeaProjects\restController\target\classes started by Gabi in C:\Users\Gabi\IdeaProjects\restController)
+04/23/2017 08:40:54 PM|INFO |Application                   | No active profile set, falling back to default profiles: default
+04/23/2017 08:40:54 PM|INFO |AnnotationConfigEmbeddedWebApplicationContext| Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@18920cc: startup date [Sun Apr 23 20:40:54 CEST 2017]; root of context hierarchy
+04/23/2017 08:40:55 PM|INFO |Version                       | HV000001: Hibernate Validator 5.3.4.Final
+04/23/2017 08:40:56 PM|INFO |DefaultListableBeanFactory    | Overriding bean definition for bean 'loadTimeWeaver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.context.annotation.LoadTimeWeavingConfiguration; factoryMethodName=loadTimeWeaver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/context/annotation/LoadTimeWeavingConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=aspectConfig; factoryMethodName=loadTimeWeaver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [legoSets/AspectConfig.class]]
+04/23/2017 08:40:58 PM|INFO |PostProcessorRegistrationDelegate$BeanPostProcessorChecker| Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$de3da42e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+04/23/2017 08:40:59 PM|INFO |TomcatEmbeddedServletContainer| Tomcat initialized with port(s): 8080 (http)
+04/23/2017 08:40:59 PM|INFO |ContextLoader                 | Root WebApplicationContext: initialization completed in 5391 ms
+04/23/2017 08:41:00 PM|INFO |ServletRegistrationBean       | Mapping servlet: 'dispatcherServlet' to [/]
+04/23/2017 08:41:00 PM|INFO |FilterRegistrationBean        | Mapping filter: 'characterEncodingFilter' to: [/*]
+04/23/2017 08:41:00 PM|INFO |FilterRegistrationBean        | Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+04/23/2017 08:41:00 PM|INFO |FilterRegistrationBean        | Mapping filter: 'httpPutFormContentFilter' to: [/*]
+04/23/2017 08:41:00 PM|INFO |FilterRegistrationBean        | Mapping filter: 'requestContextFilter' to: [/*]
+04/23/2017 08:41:01 PM|INFO |LocalContainerEntityManagerFactoryBean| Building JPA container EntityManagerFactory for persistence unit 'default'
+04/23/2017 08:41:01 PM|INFO |LogHelper                     | HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+04/23/2017 08:41:01 PM|INFO |Version                       | HHH000412: Hibernate Core {5.0.12.Final}
+04/23/2017 08:41:01 PM|INFO |Environment                   | HHH000206: hibernate.properties not found
+04/23/2017 08:41:01 PM|INFO |Environment                   | HHH000021: Bytecode provider name : javassist
+04/23/2017 08:41:01 PM|INFO |Version                       | HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+04/23/2017 08:41:02 PM|INFO |Dialect                       | HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+04/23/2017 08:41:03 PM|INFO |SchemaExport                  | HHH000227: Running hbm2ddl schema export
+04/23/2017 08:41:03 PM|INFO |SchemaExport                  | HHH000230: Schema export complete
+04/23/2017 08:41:03 PM|INFO |LocalContainerEntityManagerFactoryBean| Initialized JPA EntityManagerFactory for persistence unit 'default'
+04/23/2017 08:41:03 PM|INFO |RestControllerAspect          | Configuration success!
+04/23/2017 08:41:03 PM|INFO |RestControllerAspect          | Configuration success!
+04/23/2017 08:41:05 PM|INFO |RequestMappingHandlerAdapter  | Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@18920cc: startup date [Sun Apr 23 20:40:54 CEST 2017]; root of context hierarchy
+04/23/2017 08:41:05 PM|INFO |RequestMappingHandlerMapping  | Mapped "{[/counter],methods=[GET]}" onto public java.lang.Integer legoSets.InvocationCounterRest.readCounterData()
+04/23/2017 08:41:05 PM|INFO |RequestMappingHandlerMapping  | Mapped "{[/MB/products/{setID}/sets/{legoSetID}],methods=[GET]}" onto legoSets.LegoSet legoSets.LegoSetRestController.readLegoSet(java.lang.String,java.lang.Long)
+04/23/2017 08:41:05 PM|INFO |RequestMappingHandlerMapping  | Mapped "{[/MB/products/{setID}/sets],methods=[GET]}" onto java.util.Collection<legoSets.LegoSet> legoSets.LegoSetRestController.readLegoSetsForType(java.lang.String)
+04/23/2017 08:41:05 PM|INFO |RequestMappingHandlerMapping  | Mapped "{[/MB/products/{setID}],methods=[GET]}" onto legoSets.LegoSetType legoSets.LegoSetRestController.readLegoSetType(java.lang.String)
+04/23/2017 08:41:05 PM|INFO |RequestMappingHandlerMapping  | Mapped "{[/MB/products/{setID}/getSets],methods=[GET]}" onto java.util.Collection<legoSets.LegoSetData> legoSets.LegoSetRestController.readLegoSetsData()
+04/23/2017 08:41:05 PM|INFO |RequestMappingHandlerMapping  | Mapped "{[/legoSetTypes],methods=[GET]}" onto java.util.Collection<legoSets.LegoSetTypeName> legoSets.LegoSetTypeRestController.readLegoSetTypes()
+04/23/2017 08:41:05 PM|INFO |RequestMappingHandlerMapping  | Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+04/23/2017 08:41:05 PM|INFO |RequestMappingHandlerMapping  | Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+04/23/2017 08:41:05 PM|INFO |SimpleUrlHandlerMapping       | Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+04/23/2017 08:41:05 PM|INFO |SimpleUrlHandlerMapping       | Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+04/23/2017 08:41:05 PM|INFO |SimpleUrlHandlerMapping       | Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+04/23/2017 08:41:05 PM|WARN |AbstractTemplateResolverConfiguration| Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+04/23/2017 08:41:05 PM|INFO |WebMvcAutoConfiguration$WelcomePageHandlerMapping| Adding welcome page: class path resource [static/index.html]
+04/23/2017 08:41:06 PM|INFO |AnnotationMBeanExporter       | Registering beans for JMX exposure on startup
+04/23/2017 08:41:06 PM|INFO |TomcatEmbeddedServletContainer| Tomcat started on port(s): 8080 (http)
+04/23/2017 08:41:06 PM|INFO |Application                   | Started Application in 13.557 seconds (JVM running for 16.384)
+04/23/2017 08:41:57 PM|INFO |DispatcherServlet             | FrameworkServlet 'dispatcherServlet': initialization started
+04/23/2017 08:41:57 PM|INFO |DispatcherServlet             | FrameworkServlet 'dispatcherServlet': initialization completed in 46 ms
+04/23/2017 08:41:58 PM|INFO |RestControllerAspect          | Invoked: class legoSets.LegoSetRestController#readLegoSetsForType	args:[legoTechnic]
+04/23/2017 08:41:58 PM|INFO |RestControllerAspect          | Invoked: class legoSets.LegoSetRestController#validateSet	args:[legoTechnic]
+04/23/2017 08:41:58 PM|INFO |QueryTranslatorFactoryInitiator| HHH000397: Using ASTQueryTranslatorFactory
+04/23/2017 08:41:58 PM|INFO |RestControllerAspect          | Finished: class legoSets.LegoSetRestController#validateSet	args:[legoTechnic]
+04/23/2017 08:41:58 PM|INFO |RestControllerAspect          | Finished: class legoSets.LegoSetRestController#readLegoSetsForType	args:[legoTechnic]
+04/23/2017 08:42:55 PM|INFO |RestControllerAspect          | Invoked: class legoSets.LegoSetRestController#readLegoSetsForType	args:[legoTechnic]
+04/23/2017 08:42:55 PM|INFO |RestControllerAspect          | Invoked: class legoSets.LegoSetRestController#validateSet	args:[legoTechnic]
+04/23/2017 08:42:55 PM|INFO |RestControllerAspect          | Finished: class legoSets.LegoSetRestController#validateSet	args:[legoTechnic]
+04/23/2017 08:42:55 PM|INFO |RestControllerAspect          | Finished: class legoSets.LegoSetRestController#readLegoSetsForType	args:[legoTechnic]

@@ -1,0 +1,27 @@
+(Easy RDF, turtle format, friend of a friends (foaf rdf), RDFa play)
+
+1. Create yout own taxonomy of classes and propertues for annotating web services (internet shop).
+This should end with annotation schema. You can use a simple text editopr or specialized RDF editor
+of your choice to produce it.
+
+2. Convert your document (Turtle to/from RDF/XML).
+3. Check, whether your document validates.
+4. Find some interesting resources or business services on the Internet (10 at least). Collect their adressses
+ and describe them shortly in a plain text.
+5. Annotate your service's home page using rdfa and terms from your taxonomy.
+
+
+ General: Model class and properties, and check whether its validate (turtle to/from rdf/xml)
+
+ SKOS Ontology
+
+(from wikipedia)
+  @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+  @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+  @prefix mo: <http://example.org/myOntology/0.1/> .
+
+ mo:Service a rdfs:Class.
+ mo:hasURL a rdfs:Property.
+
+ mo:WS1 a Service.
+ mo:WS1 mo:hasURL "http://...".
